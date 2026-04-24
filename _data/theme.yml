@@ -93,6 +93,16 @@ navbar-background: bg-dark
 # Enter one of the following options below: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
 bootswatch: # leave blank or comment out for plain bootstrap
 
+##################################
+theme: jekyll-theme-architect
+
+
+
+##################################
+
+
+
+
 # THEME FONTS
 base-font-size: 1.2em
 text-color: "#191919"
