@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL PAGE SPACING FIX
+   GLOBAL PAGE SPACING (RESPONSIVE)
    ========================= */
 
 .container,
@@ -8,6 +8,23 @@
   padding-right: 80px;
 }
 
+/* tablets */
+@media (max-width: 992px) {
+  .container,
+  .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* phones */
+@media (max-width: 576px) {
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 /* =========================
    MUSEUM GALLERY (CARD SYSTEM)
