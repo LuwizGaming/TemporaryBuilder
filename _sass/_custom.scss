@@ -8,6 +8,9 @@
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  position: relative;
+  overflow: hidden;
 }
 
 .browse-item:hover {
@@ -15,16 +18,24 @@
   box-shadow: 0 10px 18px rgba(0,0,0,0.15);
 }
 
+/* 4:3 image container system */
+.browse-item::before {
+  content: "";
+  display: block;
+  padding-top: 75%; /* 4:3 ratio */
+}
+
 .browse-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
 }
 
-.browse-item {
-  overflow: hidden;
-}
-
+/* captions */
 .browse-caption {
   text-align: center;
   padding-top: 8px;
@@ -42,7 +53,6 @@
 
 /* =========================
    MUSEUM NAVBAR LAYOUT
-   (wide spacing desktop + clean mobile)
    ========================= */
 
 .navbar .container {
@@ -51,7 +61,6 @@
   align-items: center;
 }
 
-/* spread nav items across full width */
 .navbar-nav {
   flex: 1;
   display: flex;
@@ -59,7 +68,6 @@
   align-items: center;
 }
 
-/* nav button look */
 .navbar-nav .nav-link {
   padding: 8px 18px;
   border-radius: 8px;
@@ -70,12 +78,10 @@
   text-align: center;
 }
 
-/* hover effect */
 .navbar-nav .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-/* mobile fallback */
 @media (max-width: 992px) {
   .navbar-nav {
     justify-content: flex-start;
@@ -85,7 +91,7 @@
 }
 
 /* =========================
-   SEARCH BAR (SCOPED STYLE)
+   SEARCH BAR STYLE
    ========================= */
 
 .navbar .form-control {
@@ -95,7 +101,6 @@
   font-size: 0.9rem;
 }
 
-/* only affect search buttons, not all navbar buttons */
 .navbar form .btn,
 .navbar .input-group .btn {
   border-radius: 20px;
