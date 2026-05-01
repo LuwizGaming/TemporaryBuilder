@@ -51,29 +51,25 @@
 
 #browseItems .overlay-content {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  background: rgba(0, 0, 0, 0.55);
-  color: white;
-
+  inset: 0;
+  background: rgba(0,0,0,0.15); /* subtle museum fade */
   opacity: 0;
-  transform: translateY(10px);
-
-  transition: all 0.3s ease;
-  padding: 10px;
+  transition: opacity 0.3s ease;
 }
 
+/* show overlay on hover */
 #browseItems .card:hover .overlay-content {
   opacity: 1;
-  transform: translateY(0);
 }
 
-.hover-date {
-  font-size: 0.85rem;
+/* image zoom */
+#browseItems .card-img-top {
+  transition: transform 0.4s ease;
 }
 
+#browseItems .card:hover .card-img-top {
+  transform: scale(1.08);
+}
 
 /* =========================
    TITLE BELOW IMAGE
