@@ -136,15 +136,13 @@
   margin-bottom: 0.5rem;
 }
 
-/*=======================================
-   GALLERY HOVER ZOOM + CAPTION FADE (CB FIXED)
+/* =========================
+   CLEAN MUSEUM HOVER (DATE ONLY)
    ========================= */
 
-/* make card behave like a container */
 #browseItems .card {
   position: relative;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 /* image zoom */
@@ -152,36 +150,39 @@
   transition: transform 0.4s ease;
 }
 
-/* zoom on hover */
 #browseItems .card:hover .card-img-top {
   transform: scale(1.08);
 }
 
-/* fade-in caption overlay */
-#browseItems .card-body {
+/* hover overlay */
+#browseItems .overlay-content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.55);
   color: white;
 
   opacity: 0;
-  transform: translateY(12px);
+  transform: translateY(10px);
 
   transition: all 0.3s ease;
-
   padding: 10px;
 }
 
-/* show caption on hover */
-#browseItems .card:hover .card-body {
+/* show on hover */
+#browseItems .card:hover .overlay-content {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* fix text visibility */
-#browseItems .card-body a {
-  color: white !important;
+/* date style */
+.hover-date {
+  font-size: 0.85rem;
+}
+
+/* title below image */
+.card-body {
+  padding: 8px 4px;
 }
