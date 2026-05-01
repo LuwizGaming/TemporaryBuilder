@@ -63,28 +63,28 @@ function makeCard(obj) {
     }
 
     // START CARD
-    var card = '<div class="item col-lg-3 col-md-4 col-sm-6 mb-2"><div class="card">';
+      var card = '<div class="item col-lg-3 col-md-4 col-sm-6 mb-2"><div class="card">';
 
     // IMAGE
     if (imgSrc) {
         card += '<a href="' + itemHref + '">';
-        card += '<img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '">';
+        card += '<img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '">';   
         card += '</a>';
     }
 
-    // HOVER OVERLAY (ONLY DATE)
+    // HOVER = TITLE (NOT DATE ANYMORE)
     card += '<div class="overlay-content">';
-    if (obj.date) {
-        card += '<span class="hover-date">' + obj.date + '</span>';
-    }
+    card += '<span class="hover-title">' + obj.title + '</span>';
     card += '</div>';
 
-    // TITLE ONLY (BELOW IMAGE)
+    // TITLE BELOW IMAGE = STILL TITLE (clean label style)
     card += '<div class="card-body text-center">';
     card += '<h3 class="card-title h6">';
     card += '<a href="' + itemHref + '" class="text-dark">' + obj.title + '</a>';
     card += '</h3>';
     card += '</div>';
+
+    card += '</div></div>';
 
     // NON-IMAGE THUMB (optional fallback)
     if (thumbSrc && !imgSrc) {
