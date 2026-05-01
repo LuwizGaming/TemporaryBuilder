@@ -136,19 +136,18 @@
   margin-bottom: 0.5rem;
 }
 
-/* =========================
-   MUSEUM GALLERY HOVER EFFECT
-   (zoom + caption fade-in)
+/*=======================================
+   GALLERY HOVER ZOOM + CAPTION FADE (CB FIXED)
    ========================= */
 
-/* card container setup */
+/* make card behave like a container */
 #browseItems .card {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* image zoom effect */
+/* image zoom */
 #browseItems .card-img-top {
   transition: transform 0.4s ease;
 }
@@ -158,22 +157,22 @@
   transform: scale(1.08);
 }
 
-/* caption area (initial hidden state) */
+/* fade-in caption overlay */
 #browseItems .card-body {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
 
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(12px);
 
   transition: all 0.3s ease;
 
-  padding: 12px;
+  padding: 10px;
 }
 
 /* show caption on hover */
@@ -182,13 +181,7 @@
   transform: translateY(0);
 }
 
-/* text cleanup */
-#browseItems .card-title a {
+/* fix text visibility */
+#browseItems .card-body a {
   color: white !important;
-  text-decoration: none;
-}
-
-#browseItems .card-text {
-  font-size: 0.85rem;
-  color: #ddd;
 }
