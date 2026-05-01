@@ -18,8 +18,6 @@
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  position: relative;
   overflow: hidden;
 }
 
@@ -28,21 +26,12 @@
   box-shadow: 0 10px 18px rgba(0,0,0,0.15);
 }
 
-/* 4:3 image container system */
-.browse-item::before {
-  content: "";
-  display: block;
-  padding-top: 75%; /* 4:3 ratio */
-}
-
-.browse-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-
+/* FIXED GALLERY IMAGE (WORKS WITH COLLECTIONBUILDER) */
+#browseItems .card-img-top {
   width: 100%;
-  height: 100%;
+  height: 220px;
   object-fit: cover;
+  display: block;
 }
 
 /* captions */
