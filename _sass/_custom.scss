@@ -135,3 +135,60 @@
 .bio-side-text p {
   margin-bottom: 0.5rem;
 }
+
+/* =========================
+   MUSEUM GALLERY HOVER EFFECT
+   (zoom + caption fade-in)
+   ========================= */
+
+/* card container setup */
+#browseItems .card {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* image zoom effect */
+#browseItems .card-img-top {
+  transition: transform 0.4s ease;
+}
+
+/* zoom on hover */
+#browseItems .card:hover .card-img-top {
+  transform: scale(1.08);
+}
+
+/* caption area (initial hidden state) */
+#browseItems .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+
+  opacity: 0;
+  transform: translateY(10px);
+
+  transition: all 0.3s ease;
+
+  padding: 12px;
+}
+
+/* show caption on hover */
+#browseItems .card:hover .card-body {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* text cleanup */
+#browseItems .card-title a {
+  color: white !important;
+  text-decoration: none;
+}
+
+#browseItems .card-text {
+  font-size: 0.85rem;
+  color: #ddd;
+}
