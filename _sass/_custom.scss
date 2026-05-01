@@ -1,57 +1,98 @@
+
 /* =========================
    GLOBAL PAGE SPACING FIX
    ========================= */
 
 .container,
 .container-fluid {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
+
 
 /* =========================
-   MUSEUM WALL GALLERY
+   MUSEUM GALLERY (CARD SYSTEM)
    ========================= */
 
-.browse-item {
+#browseItems .card {
+  position: relative;
+  overflow: hidden;
   border: 1px solid #e0e0e0;
-  padding: 10px;
-  background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  overflow: hidden;
 }
 
-.browse-item:hover {
+#browseItems .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 18px rgba(0,0,0,0.15);
 }
 
-/* FIXED GALLERY IMAGE (WORKS WITH COLLECTIONBUILDER) */
-#browseItems .card-img-top {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-}
-
-/* captions */
-.browse-caption {
-  text-align: center;
-  padding-top: 8px;
-}
-
-.browse-title {
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.browse-description {
-  font-size: 0.8rem;
-  color: #666;
-}
 
 /* =========================
-   MUSEUM NAVBAR LAYOUT
+   FIXED IMAGE RATIO (UNIFORM GRID)
+   ========================= */
+
+#browseItems .card-img-top {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+#browseItems .card:hover .card-img-top {
+  transform: scale(1.08);
+}
+
+
+/* =========================
+   HOVER OVERLAY (DATE ONLY)
+   ========================= */
+
+#browseItems .overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+
+  opacity: 0;
+  transform: translateY(10px);
+
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+#browseItems .card:hover .overlay-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-date {
+  font-size: 0.85rem;
+}
+
+
+/* =========================
+   TITLE BELOW IMAGE
+   ========================= */
+
+#browseItems .card-body {
+  text-align: center;
+  padding: 10px 8px;
+}
+
+#browseItems .card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+/* =========================
+   NAVBAR LAYOUT
    ========================= */
 
 .navbar .container {
@@ -81,16 +122,9 @@
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-@media (max-width: 992px) {
-  .navbar-nav {
-    justify-content: flex-start;
-    gap: 10px;
-    flex: unset;
-  }
-}
 
 /* =========================
-   SEARCH BAR STYLE
+   SEARCH BAR
    ========================= */
 
 .navbar .form-control {
@@ -115,6 +149,7 @@
   background-color: rgba(255,255,255,0.25);
 }
 
+
 /* =========================
    BIOGRAPHY
    ========================= */
@@ -134,55 +169,4 @@
 
 .bio-side-text p {
   margin-bottom: 0.5rem;
-}
-
-/* =========================
-   CLEAN MUSEUM HOVER (DATE ONLY)
-   ========================= */
-
-#browseItems .card {
-  position: relative;
-  overflow: hidden;
-}
-
-/* image zoom */
-#browseItems .card-img-top {
-  transition: transform 0.4s ease;
-}
-
-#browseItems .card:hover .card-img-top {
-  transform: scale(1.08);
-}
-
-/* hover overlay */
-#browseItems .overlay-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  background: rgba(0,0,0,0.55);
-  color: white;
-
-  opacity: 0;
-  transform: translateY(10px);
-
-  transition: all 0.3s ease;
-  padding: 10px;
-}
-
-/* show on hover */
-#browseItems .card:hover .overlay-content {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* date style */
-.hover-date {
-  font-size: 0.85rem;
-}
-
-/* title below image */
-.card-body {
-  padding: 8px 4px;
 }
