@@ -41,37 +41,30 @@ function makeCard(obj) {
     } else {
         thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-default }}.svg';
     }  
-    // start card
-    var card = '<div class="item col-lg-3 col-md-4 col-sm-6 mb-2"><div class="card">';
-    // top image for photos
-    if(imgSrc) {
-        card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
-    }
-    // title
-    card += '<div class="card-body text-center"> <h3 class="card-title h4"><a href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
-    // thumb for non-photo items
-    if(thumbSrc){
-        card += '<p><a href="' + itemHref + '"><img class="lazyload w-50" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
-    }
-    // other fields
-    card += '<p class="card-text">';
-    {% for f in fields %}{% unless f.hidden == 'true' %}
-    if(obj[{{ f.field | jsonify }}]){
-    {% if f.display_name %}card += '<strong>{{ f.display_name }}:</strong> ';{% endif %}
-    {% if f.btn == 'true' %}
-    var btns = obj[{{ f.field | jsonify }}].split(";");
-    for (var i = 0, len = btns.length; i < len; i++) {
-      if(btns[i] != "") {
-        card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ page.url | relative_url }}#' + encodeURIComponent(btns[i].trim()) + '">' + btns[i].trim() + '</a>';
-      }
-    }
-    {% else %}
-    card += obj[{{ f.field | jsonify }}];
-    {% endif %}
-    {% unless forloop.last %}card += '<br>';{% endunless %}
-    }
-    {% endunless %}{% endfor %}
-    card += '</p>';
+   // start card
+var card = '<div class="item col-lg-3 col-md-4 col-sm-6 mb-2"><div class="card">';
+
+// image
+if(imgSrc) {
+    card += '<a href="' + itemHref + '"><img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
+}
+
+// hover overlay (ONLY DATE)
+card += '<div class="overlay-content">';
+if(obj.date){
+    card += '<span class="hover-date">' + obj.date + '</span>';
+}
+card += '</div>';
+
+// title BELOW image (always visible)
+card += '<div class="card-caption text-center">';
+card += '<h3 class="card-title h6"><a href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
+card += '</div>';
+
+// thumb for non-photo items
+if(thumbSrc){
+    card += '<p><a href="' + itemHref + '"><img class="lazyload w-50" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
+}
     // media type
     if(obj.format != "") {
         card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ page.url | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
