@@ -1,5 +1,15 @@
-/*/* =========================
-   GLOBAL HEADER BACKGROUND (SUBTLE BANNER)
+
+/* =========================
+   BODY BASE LAYER
+   ========================= */
+
+body {
+  position: relative;
+  padding-top: 40px;
+}
+
+/* =========================
+   GLOBAL HEADER BACKGROUND
    ========================= */
 
 body::before {
@@ -7,6 +17,7 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 180px;
 
@@ -21,14 +32,15 @@ body::before {
   pointer-events: none;
 }
 
-/* soft fade overlay for elegance */
+/* soft fade overlay */
 body::after {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  height: 180px;
+
   width: 100%;
+  height: 180px;
 
   background: linear-gradient(
     to bottom,
@@ -40,9 +52,13 @@ body::after {
   pointer-events: none;
 }
 
-/* push content slightly down */
-body {
-  padding-top: 40px;
+/* ensure content is always above background */
+.container,
+.container-fluid,
+.navbar,
+main {
+  position: relative;
+  z-index: 1;
 }
 
 /* =========================
@@ -55,7 +71,6 @@ body {
   padding-right: 80px;
 }
 
-/* tablets */
 @media (max-width: 992px) {
   .container,
   .container-fluid {
@@ -64,7 +79,6 @@ body {
   }
 }
 
-/* phones */
 @media (max-width: 576px) {
   .container,
   .container-fluid {
@@ -80,10 +94,8 @@ body {
 #browseItems .card {
   position: relative;
   overflow: hidden;
-
   border: 1px solid #e0e0e0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -92,17 +104,12 @@ body {
   box-shadow: 0 10px 18px rgba(0,0,0,0.15);
 }
 
-
-/* =========================
-   FIXED IMAGE RATIO (1:1 GRID)
-   ========================= */
-
+/* image ratio */
 #browseItems .card-img-top {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
-
   transition: transform 0.4s ease;
 }
 
@@ -110,21 +117,13 @@ body {
   transform: scale(1.08);
 }
 
-
-/* =========================
-   HOVER OVERLAY (DISABLED CLEANLY)
-   ========================= */
-
+/* disable overlay cleanly */
 #browseItems .overlay-content {
   display: none !important;
   height: 0 !important;
 }
 
-
-/* =========================
-   CARD TITLE (GALLERY)
-   ========================= */
-
+/* card title */
 #browseItems .card-body {
   text-align: center;
   padding: 10px 8px;
@@ -136,9 +135,8 @@ body {
   margin: 0;
 }
 
-
 /* =========================
-   NAVBAR LAYOUT
+   NAVBAR
    ========================= */
 
 .navbar .container {
@@ -157,72 +155,18 @@ body {
 .navbar-nav .nav-link {
   padding: 8px 18px;
   border-radius: 8px;
-  letter-spacing: 0.6px;
   font-weight: 500;
   min-width: 90px;
   text-align: center;
-
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .navbar-nav .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-
 /* =========================
-   SEARCH BAR
-   ========================= */
-
-.navbar .form-control {
-  border-radius: 20px;
-  border: none;
-  padding: 6px 12px;
-  font-size: 0.9rem;
-}
-
-.navbar form .btn,
-.navbar .input-group .btn {
-  border-radius: 20px;
-  padding: 6px 14px;
-
-  background-color: rgba(255,255,255,0.15);
-  border: none;
-  color: white;
-
-  transition: all 0.2s ease;
-}
-
-.navbar form .btn:hover,
-.navbar .input-group .btn:hover {
-  background-color: rgba(255,255,255,0.25);
-}
-
-
-/* =========================
-   BIOGRAPHY
-   ========================= */
-
-.bio-photo {
-  border: 2px solid #ddd;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-}
-
-.bio-side-text {
-  font-size: 0.9rem;
-  color: #444;
-  line-height: 1.6;
-  padding: 8px 4px;
-}
-
-.bio-side-text p {
-  margin-bottom: 0.5rem;
-}
-
-
-/* =========================
-   ITEM PAGE TITLE (FINAL CLEAN VERSION)
+   ITEM TITLE (CLEAN FIX)
    ========================= */
 
 #item-title {
@@ -230,16 +174,14 @@ body {
   font-size: 2.4rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-
   margin: 20px 0 30px;
 }
 
-/* clickable title styling */
 #item-title a {
   text-decoration: none;
   color: inherit;
-  display: inline-block;
   transition: transform 0.2s ease;
+  display: inline-block;
 }
 
 #item-title a:hover {
