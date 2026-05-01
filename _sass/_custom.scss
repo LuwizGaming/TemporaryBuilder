@@ -50,25 +50,7 @@
    ========================= */
 
 #browseItems .overlay-content {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.15); /* subtle museum fade */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* show overlay on hover */
-#browseItems .card:hover .overlay-content {
-  opacity: 1;
-}
-
-/* image zoom */
-#browseItems .card-img-top {
-  transition: transform 0.4s ease;
-}
-
-#browseItems .card:hover .card-img-top {
-  transform: scale(1.08);
+  display: none !important;
 }
 
 /* =========================
