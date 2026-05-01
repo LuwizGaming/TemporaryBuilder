@@ -168,3 +168,18 @@
   letter-spacing: 0.5px;
   margin: 15px 0 25px 0;
 }
+
+/* =========================
+   ITEM TITLE FIX (FORCE OVERRIDE)
+   ========================= */
+
+h2#item-title {
+  font-size: 2.4rem !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+
+  display: block;
+  width: 100%;
+
+  margin: 20px auto 30px auto !important;
+}
