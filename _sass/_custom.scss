@@ -42,7 +42,6 @@
   transition: transform 0.4s ease;
 }
 
-/* zoom effect */
 #browseItems .card:hover .card-img-top {
   transform: scale(1.08);
 }
@@ -52,7 +51,6 @@
    HOVER OVERLAY (DISABLED CLEANLY)
    ========================= */
 
-/* IMPORTANT: prevents black bar / empty overlay issue */
 #browseItems .overlay-content {
   display: none !important;
   height: 0 !important;
@@ -60,7 +58,7 @@
 
 
 /* =========================
-   TITLE BELOW IMAGE
+   CARD TITLE (GALLERY)
    ========================= */
 
 #browseItems .card-body {
@@ -97,11 +95,10 @@
   border-radius: 8px;
   letter-spacing: 0.6px;
   font-weight: 500;
-
-  transition: all 0.2s ease;
-
   min-width: 90px;
   text-align: center;
+
+  transition: all 0.2s ease;
 }
 
 .navbar-nav .nav-link:hover {
@@ -159,27 +156,28 @@
   margin-bottom: 0.5rem;
 }
 
-/* cleaner museum-style title */
-
-#item-title {
-  font-size: 2.2rem;
-  font-weight: 500;
-  text-align: center;
-  letter-spacing: 0.5px;
-  margin: 15px 0 25px 0;
-}
 
 /* =========================
-   ITEM TITLE FIX (FORCE OVERRIDE)
+   ITEM PAGE TITLE (FINAL CLEAN VERSION)
    ========================= */
 
-h2#item-title {
-  font-size: 2.4rem !important;
-  font-weight: 600 !important;
-  text-align: center !important;
+#item-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 
-  display: block;
-  width: 100%;
+  margin: 20px 0 30px;
+}
 
-  margin: 20px auto 30px auto !important;
+/* clickable title styling */
+#item-title a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+#item-title a:hover {
+  transform: scale(1.03);
 }
