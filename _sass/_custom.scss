@@ -57,36 +57,32 @@
    COLLECTION BANNER
    ========================= */
 
-.collection-banner {
+#home-banner {
   position: relative;
-
-  height: 220px; /* adjust if you want bigger hero */
-
+  height: 260px; /* adjust if you want bigger hero */
   background-size: cover;
   background-position: center;
-
-  z-index: 1;
   overflow: hidden;
 }
 
-/* dark gradient overlay */
-.collection-banner::after {
+/* dark overlay like AniList */
+#home-banner::after {
   content: "";
   position: absolute;
   inset: 0;
 
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.45),
-    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2),
     transparent
   );
 
   z-index: 1;
 }
 
-/* ensure banner content sits above overlay */
-.collection-banner > * {
+/* keep title above overlay */
+#home-title-box {
   position: relative;
   z-index: 2;
 }
