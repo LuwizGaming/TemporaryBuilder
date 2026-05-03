@@ -243,3 +243,71 @@ nav.navbar.navbar-expand-lg {
     rgba(0,0,0,0.7)
   );
 }
+
+/* =========================
+   PROFILE OVER BANNER
+   ========================= */
+
+.bio-profile {
+  margin-top: -120px; /* pulls it up over banner */
+  position: relative;
+  z-index: 10;
+}
+
+.bio-profile-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* avatar */
+.bio-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* text */
+.bio-profile-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.bio-profile-text p {
+  margin: 5px 0 0;
+  opacity: 0.7;
+}
+
+/* =========================
+   SUB NAV (SOLID BAR)
+   ========================= */
+
+.bio-subnav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  background: #111;
+  padding: 12px 0;
+
+  margin-top: 20px;
+}
+
+.bio-subnav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: 0.2s ease;
+}
+
+.bio-subnav a:hover {
+  opacity: 1;
+}
