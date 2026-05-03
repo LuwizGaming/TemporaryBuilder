@@ -7,13 +7,9 @@ body > * {
 }
 
 /* =========================
-   HOMEPAGE BACKGROUND ONLY
+   GLOBAL BACKGROUND (ALL PAGES)
    ========================= */
-body.home {
-  position: relative;
-}
-
-body.home::before {
+body::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -29,7 +25,7 @@ body.home::before {
   pointer-events: none;
 }
 
-body.home::after {
+body::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -135,7 +131,7 @@ nav.navbar.navbar-expand-lg {
   position: relative;
 }
 
-/* dark gradient overlay */
+/* gradient overlay */
 #home-banner::after {
   content: "";
   position: absolute;
