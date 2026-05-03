@@ -1,4 +1,26 @@
 /* =========================
+   ANILIST-STYLE NAVBAR
+   ========================= */
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+
+  /* 50% dark transparency */
+  background: rgba(10, 10, 15, 0.5);
+
+  /* glass effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  transition: all 0.3s ease;
+
+  padding: 0.9rem 0;
+}
+
+/* =========================
    GLOBAL HEADER BACKGROUND
    ========================= */
 
