@@ -1,7 +1,9 @@
 ---
 title: Biography
-layout: page
+layout: home-infographic
 permalink: /biography/
+image: /assets/img/juanluna.jpg
+banner_title: Biography
 ---
 
 <div class="container py-4">
