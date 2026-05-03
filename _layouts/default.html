@@ -10,7 +10,9 @@
     
     <!-- TOP HEADER (KEEP OUTSIDE GRID) --> 
     {% include collection-nav.html %}
-    {% include collection-banner.html %} 
+    {% if page.show_banner != false %}
+      {% include collection-banner.html %}
+    {% endif %}
     
 
     <!-- PAGE LAYOUT -->
