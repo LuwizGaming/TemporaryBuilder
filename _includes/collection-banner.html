@@ -28,7 +28,17 @@
 
     <div id="home-title-box" class="position-relative">
 
-        
+        <div class="p-2 text-center text-white bg-dark bg-opacity-75">
+
+            <h1 class="display-4">
+              {% if page.banner_title %}
+                {{ page.banner_title }}
+              {% elsif page.title %}
+                {{ page.title }}
+              {% else %}
+                {{ site.title }}
+              {% endif %}
+            </h1>
 
             {% unless page.hide_tagline %}
               {% if page.tagline %}
