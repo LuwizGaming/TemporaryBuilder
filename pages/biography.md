@@ -1,9 +1,7 @@
 ---
 title: Biography
-layout: home-infographic
+layout: page
 permalink: /biography/
-image: /assets/img/background.jpg
-banner_title: Biography
 ---
 
 <div class="container py-4">
