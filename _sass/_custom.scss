@@ -1,46 +1,4 @@
 /* =========================
-   GLOBAL PAGE LAYERING
-   ========================= */
-body > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* =========================
-   GLOBAL BACKGROUND (ALL PAGES)
-   ========================= */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background-image: url("/assets/img/background.jpg");
-  background-size: cover;
-  background-position: center;
-
-  opacity: 0.15;
-  filter: grayscale(20%) contrast(110%);
-
-  z-index: 0;
-  pointer-events: none;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.25),
-    transparent 200px
-  );
-
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* =========================
    NAVBAR (FIXED + GLASS)
    ========================= */
 nav.navbar.navbar-expand-lg {
@@ -55,6 +13,7 @@ nav.navbar.navbar-expand-lg {
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* navbar layout */
 .navbar .container,
 .navbar .container-fluid {
   display: flex;
@@ -71,7 +30,6 @@ nav.navbar.navbar-expand-lg {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 12px;
 }
 
@@ -117,21 +75,20 @@ nav.navbar.navbar-expand-lg {
 }
 
 /* =========================
-   BANNER (FULL WIDTH)
+   HOMEPAGE BANNER (SAFE)
    ========================= */
 #home-banner {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  height: 420px;
+  width: 100%;
+  height: 400px;
 
   background-size: cover !important;
   background-position: center !important;
 
-  margin-bottom: 0 !important;
   position: relative;
+  margin-bottom: 0;
 }
 
-/* gradient overlay */
+/* subtle fade */
 #home-banner::after {
   content: "";
   position: absolute;
@@ -139,20 +96,20 @@ nav.navbar.navbar-expand-lg {
   left: 0;
 
   width: 100%;
-  height: 60%;
+  height: 50%;
 
   background: linear-gradient(
     to bottom,
     rgba(0,0,0,0),
-    rgba(0,0,0,0.7)
+    rgba(0,0,0,0.5)
   );
 }
 
 /* =========================
-   PROFILE OVER BANNER
+   BIO PROFILE (OVERLAY)
    ========================= */
 .bio-profile {
-  margin-top: -80px;
+  margin-top: -60px;
   position: relative;
   z-index: 10;
 }
@@ -166,20 +123,20 @@ nav.navbar.navbar-expand-lg {
   padding: 20px;
   border-radius: 12px;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .bio-avatar {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 10px;
-  border: 4px solid white;
+  border: 3px solid white;
 }
 
 .bio-profile-text h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .bio-profile-text p {
@@ -188,15 +145,12 @@ nav.navbar.navbar-expand-lg {
 }
 
 /* =========================
-   SUB NAV (FULL WIDTH BAR)
+   SUB NAV (SOLID BAR)
    ========================= */
 .bio-subnav {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
 
   background: #111;
   padding: 12px 0;
@@ -247,7 +201,7 @@ nav.navbar.navbar-expand-lg {
    ========================= */
 #item-title {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin: 20px 0 30px;
 }
