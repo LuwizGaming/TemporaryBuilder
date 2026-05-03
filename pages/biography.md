@@ -33,7 +33,8 @@ bio-page: true
   <h2>Biography</h2>
 
   <p>
-    Main biography text goes here. This sits to the right of the image.
+    Main biography text goes here. This sits to the right of the image.<br>
+    supot HHRFHWIFHWFHOWIFH
   </p>
 
   <p>
