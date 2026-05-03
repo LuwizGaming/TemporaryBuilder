@@ -2,6 +2,7 @@
 title: Data
 layout: data
 permalink: /data.html
+show_banner: false
 # see _data/config-table.csv for table display options
 # a table visualization will be added below the content in this file
 ---
