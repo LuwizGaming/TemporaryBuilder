@@ -44,6 +44,3 @@ permalink: /biography/
   </p>
 
 </div>
-
-
-</div>
