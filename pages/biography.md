@@ -5,6 +5,7 @@ permalink: /biography/
 ---
 
 <div class="bio-hero"></div>
+
 <div class="bio-subnav">
   <a href="#bio">About</a>
   <a href="#facts">Facts</a>
@@ -34,9 +35,7 @@ permalink: /biography/
 
   <h2>Biography</h2>
 
-  <p>
-    Main biography text goes here. This sits to the right of the image.<br>
-    supot HHRFHWIFHWFHOWIFH supot 2x
+  <p>lllll
   </p>
 
   <p>
