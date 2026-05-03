@@ -4,13 +4,6 @@ layout: page
 permalink: /biography/
 ---
 
-<div class="bio-hero"></div>
-
-<div class="bio-subnav">
-  <a href="#bio">About</a>
-  <a href="#facts">Facts</a>
-  <a href="#timeline">Timeline</a>
-</div>
 
 <!-- left -->
 
