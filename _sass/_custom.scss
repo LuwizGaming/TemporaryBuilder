@@ -123,3 +123,19 @@ GALLERY
 .container-fluid {
   max-width: 100%;
 }
+
+/* =========================
+ GALLERY HOVER ZOOM
+   ========================= */
+
+#browseItems .card {
+  overflow: hidden; /* ensures zoom doesn't spill outside card */
+}
+
+#browseItems .card-img-top {
+  transition: transform 0.4s ease;
+}
+
+#browseItems .card:hover .card-img-top {
+  transform: scale(1.08);
+}
