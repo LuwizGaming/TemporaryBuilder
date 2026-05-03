@@ -36,7 +36,7 @@ permalink: /biography/
 
   <p>
     Main biography text goes here. This sits to the right of the image.<br>
-    supot HHRFHWIFHWFHOWIFH
+    supot HHRFHWIFHWFHOWIFH supot 2x
   </p>
 
   <p>
