@@ -54,7 +54,7 @@
 }
 
 /* =========================
-   ROLLECTION BANNER
+   COLLECTION BANNER
    ========================= */
 
 .collection-banner {
@@ -87,6 +87,17 @@
 
 /* ensure banner content sits above overlay */
 .collection-banner > * {
+  position: relative;
+  z-index: 2;
+}
+
+/*cwcwcwcwc*/
+#home-banner {
+  position: relative;
+  z-index: 1;
+}
+
+#home-title-box {
   position: relative;
   z-index: 2;
 }
