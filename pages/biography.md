@@ -2,7 +2,7 @@
 title: Biography
 layout: home-infographic
 permalink: /biography/
-image: /assets/img/juanluna.jpg
+image: /assets/img/background.jpg
 banner_title: Biography
 ---
 
