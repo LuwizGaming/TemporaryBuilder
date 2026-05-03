@@ -6,26 +6,27 @@
 
   <body class="d-flex flex-column h-100">
 
+    <!-- Skip link -->
     <div id="skip-to-content">
       <a href="#maincontent">Skip to main content</a>
     </div>
 
-    <!-- TOP HEADER (KEEP OUTSIDE GRID) -->
-    {% include collection-banner.html %}
-    {% include collection-nav.html %}
+    <!-- TOP HEADER (only show on collection pages) -->
+    {% if page.collection %}
+      {% include collection-banner.html %}
+      {% include collection-nav.html %}
+    {% endif %}
 
-    <!-- PAGE LAYOUT -->
-    <div class="container-fluid">
+    <!-- PAGE CONTENT -->
+    <div class="container-fluid flex-grow-1">
       <div class="row">
-
-        <!-- MAIN CONTENT -->
-        <main id="maincontent" class="col-12
+        <main id="maincontent" class="col-12">
           {{ content }}
         </main>
-
       </div>
     </div>
 
+    <!-- FOOTER -->
     {% include footer.html %}
     {% include foot.html %}
     {% include scroll-to-top.html %}
