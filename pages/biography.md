@@ -2,16 +2,18 @@
 title: Biography
 layout: page
 permalink: /biography/
-bio-page: true
 ---
+
 <div class="bio-hero"></div>
+<div class="bio-subnav">
+  <a href="#bio">About</a>
+  <a href="#facts">Facts</a>
+  <a href="#timeline">Timeline</a>
+</div>
+
+<!-- left -->
+
 <div class="container py-4">
-
-  <div class="row">
-    
-      <!-- LEFT SIDE -->
-
-<div class="col-md-4">
 
   <img src="{{ '/assets/img/juanluna.jpg' | relative_url }}"
        class="img-fluid mb-3 bio-photo"
