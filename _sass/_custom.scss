@@ -1,11 +1,6 @@
 /* =========================
    GLOBAL BACKGROUND EFFECT
    ========================= */
-body {
-  outline: 10px solid red !important;
-}
-/*
-*/
 body::before {
   content: "";
   position: fixed;
@@ -89,6 +84,9 @@ main {
 /* =========================
    NAVBAR
    ========================= */
+nav.navbar {
+  background: yellow !important;
+}
 
 nav.navbar.navbar-expand-lg {
   position: fixed !important;
@@ -143,14 +141,13 @@ nav.navbar.navbar-expand-lg {
   margin-left: auto;
 }
 
-/* prevent content hiding under fixed navbar */
-body {
-  padding-top: 70px;
-}
-
 /* =========================
    BANNER / HERO IMAGE
    ========================= */
+#home-banner {
+  padding-top: 80px;
+}
+
 
 /* =========================
    MUSEUM GALLERY CARDS
