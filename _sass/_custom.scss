@@ -126,16 +126,34 @@ main {
 }
 
 /* =========================
-   BRAND
+   BRAND and banner
    ========================= */
 .navbar-brand {
   margin-left: 0;
   padding-left: 0;
 }
 
+#home-banner {
+  padding-top: 80px;
+}
+
 /* =========================
    NAVBAR
    ========================= */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+/*up top is optional for now ehehhehe*/
 
 .navbar .container,
 .navbar .container-fluid {
