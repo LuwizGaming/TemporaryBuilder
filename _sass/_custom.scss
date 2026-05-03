@@ -126,20 +126,26 @@ main {
 }
 
 /* =========================
+   BRAND
+   ========================= */
+.navbar-brand {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* =========================
    NAVBAR
    ========================= */
 
-.navbar .container {
+.navbar .container,
+.navbar .container-fluid {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .navbar-nav {
-  flex: 1;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  gap: 20px;
+  justify-content: center;
 }
 
 .navbar-nav .nav-link {
