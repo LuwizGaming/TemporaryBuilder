@@ -1,46 +1,4 @@
 /* =========================
-   GLOBAL BACKGROUND EFFECT
-   ========================= */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 180px;
-
-  background-image: url("/assets/img/background.jpg");
-  background-size: cover;
-  background-position: center;
-
-  opacity: 0.15;
-  filter: grayscale(20%) contrast(110%);
-
-  z-index: -1;
-  pointer-events: none;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 180px;
-
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.25),
-    transparent
-  );
-
-  z-index: -1;
-  pointer-events: none;
-}
-
-/* =========================
    PAGE LAYOUT BASE
    ========================= */
 
@@ -132,13 +90,6 @@ nav.navbar.navbar-expand-lg {
 /* RIGHT SEARCH */
 .navbar .d-flex {
   margin-left: auto;
-}
-
-/* =========================
-   BANNER / HERO IMAGE
-   ========================= */
-#home-banner {
-  padding-top: 80px;
 }
 
 
