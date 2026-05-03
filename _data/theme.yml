@@ -3,15 +3,6 @@
 # values set here help configure details of individual pages in the website
 ##########
 
-##########
-# HOME PAGE
-#
-# featured image is used in home page banner and in meta markup to represent the collection
-# use either an objectid (from an item in this collect), a relative location of an image in this repo (ex. /assets/img/feature.jpg), or a full url to an image elsewhere
-featured-image: ##########
-# CollectionBuilder Theme Customization
-# values set here help configure details of individual pages in the website
-##########
 
 ##########
 # HOME PAGE
