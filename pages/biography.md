@@ -4,6 +4,7 @@ layout: page
 permalink: /biography/
 bio-page: true
 ---
+<div class="bio-hero"></div>
 <div class="container py-4">
 
   <div class="row">
