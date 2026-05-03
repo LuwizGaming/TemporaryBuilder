@@ -86,38 +86,46 @@ main {
    NAVBAR
    ========================= */
 
-nav.navbar {
+nav.navbar.navbar-expand-lg {
   position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 99999 !important;
 
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.35) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* navbar layout */
+/* layout fix */
 .navbar .container,
 .navbar .container-fluid {
   display: flex;
   align-items: center;
 }
 
-/* center nav links */
-.navbar-nav {
-  flex: 1;
-  justify-content: center;
-  gap: 10px;
+/* LEFT BRAND (Juan Luna) */
+.navbar-brand {
+  margin-left: 0;
+  padding-left: 0;
+  white-space: nowrap;
 }
 
-/* nav buttons */
+/* CENTER NAV */
+.navbar-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* NAV BUTTONS */
 .navbar-nav .nav-link {
-  padding: 8px 18px;
+  padding: 8px 16px;
   border-radius: 8px;
   font-weight: 500;
-  min-width: 90px;
   text-align: center;
   transition: 0.2s ease;
 }
@@ -126,10 +134,14 @@ nav.navbar {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-/* brand spacing */
-.navbar-brand {
-  margin-left: 0;
-  padding-left: 0;
+/* RIGHT SEARCH */
+.navbar .d-flex {
+  margin-left: auto;
+}
+
+/* prevent content hiding under fixed navbar */
+body {
+  padding-top: 70px;
 }
 
 /* =========================
@@ -137,7 +149,7 @@ nav.navbar {
    ========================= */
 
 #home-banner {
-  padding-top: 80px;
+  padding-top: 0px;
 }
 
 /* =========================
