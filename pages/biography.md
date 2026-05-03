@@ -2,6 +2,7 @@
 title: Biography
 layout: page
 permalink: /biography/
+hide_tagline: true
 ---
 
 <div class="container py-4">
