@@ -44,10 +44,6 @@ body::after {
    PAGE LAYOUT BASE
    ========================= */
 
-body {
-  padding-top: 70px; /* space for fixed navbar */
-}
-
 .container,
 .container-fluid,
 main {
@@ -84,9 +80,6 @@ main {
 /* =========================
    NAVBAR
    ========================= */
-nav.navbar {
-  background: yellow !important;
-}
 
 nav.navbar.navbar-expand-lg {
   position: fixed !important;
