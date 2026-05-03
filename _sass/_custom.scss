@@ -262,3 +262,94 @@ nav.navbar.navbar-expand-lg {
 .bio-subnav a:hover {
   opacity: 1;
 }
+
+   /* =========================
+   REMOVE WHITE SPACE BUG
+   ========================= */
+#home-banner {
+  margin-bottom: 0 !important;
+}
+
+/* =========================
+   FULL WIDTH BANNER
+   ========================= */
+#home-banner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* =========================
+   PROFILE (OVERLAP)
+   ========================= */
+.bio-profile {
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+}
+
+.bio-profile-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* avatar */
+.bio-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 4px solid white;
+}
+
+/* text */
+.bio-profile-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.bio-profile-text p {
+  margin: 5px 0 0;
+  opacity: 0.7;
+}
+
+/* =========================
+   SUB NAV (SOLID BAR)
+   ========================= */
+.bio-subnav {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+
+  background: #1a1d24;
+  padding: 12px 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.bio-subnav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.bio-subnav a:hover {
+  opacity: 1;
+}
+
+/* =========================
+   FIX CONTENT SPACING
+   ========================= */
+.container {
+  position: relative;
+  z-index: 1;
+}
