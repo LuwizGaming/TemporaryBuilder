@@ -1,7 +1,11 @@
 /* =========================
    GLOBAL BACKGROUND EFFECT
    ========================= */
-
+body {
+  outline: 10px solid red !important;
+}
+/*
+*/
 body::before {
   content: "";
   position: fixed;
