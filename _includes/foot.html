@@ -10,3 +10,12 @@
 {% for f in feet %}{% include {{ f }} %}
 {% endfor %}
 {%- endif -%}
+
+
+
+<script>
+window.addEventListener("load", () => {
+  document.querySelectorAll("#loading, .loading, .spinner")
+    .forEach(el => el.style.display = "none");
+});
+</script>
