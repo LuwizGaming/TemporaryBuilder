@@ -28,7 +28,7 @@ bio-img-left: 20px
       <!-- LEFT SIDE -->
 <div class="col-md-4 bio-left">
 
-  <img src="{{ '/assets/img/juanluna.jpg' | relative_url }}"
+  <img src="{{ '/assets/img/juanluna3.png' | relative_url }}"
      class="bio-photo"
      alt="Photo of Juan Luna">
      
