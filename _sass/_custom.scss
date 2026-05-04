@@ -1,3 +1,16 @@
+/* =========================
+   GLOBAL PAGE SPACING
+   ========================= */
+
+main#maincontent,
+.container,
+.container-fluid {
+  padding-top: 50px;   /* space under fixed navbar */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
 #home-banner {
   background-size: cover;
   background-position: center 20%; /* key fix */
