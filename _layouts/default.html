@@ -11,7 +11,11 @@
     <!-- TOP HEADER (KEEP OUTSIDE GRID) --> 
     {% include collection-nav.html %}
     {% include collection-banner.html %} 
+
     
+    {% unless page.hide_profile_nav %}
+      {% include profile-nav.html %}
+    {% endunless %}
 
     <!-- PAGE LAYOUT -->
     <div class="container-fluid">
