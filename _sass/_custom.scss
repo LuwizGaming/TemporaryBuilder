@@ -152,7 +152,7 @@ body {
 /* BIO HEADER ANCHOR */
 .bio-header {
   position: relative;
-  height: 100px; /* controls overlap zone */
+  height: 260x; /* controls overlap zone */
 }
 /* BIO AVATAR */
 .bio-avatar {
@@ -163,7 +163,7 @@ body {
 
   transform: translateY(50%);
 
-  width: clamp(150px, 14vw, 220px);
+  width: 437px
   height: auto;
 
   border-radius: 12px;
