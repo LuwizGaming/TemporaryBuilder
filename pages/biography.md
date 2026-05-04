@@ -2,8 +2,9 @@
 title: Biography
 layout: page
 permalink: /biography/
-bio-img-top: -320px
-bio-img-left: 0px
+
+bio-img-top: 100%
+bio-img-left: 30px
 ---
 
 <!--
@@ -12,13 +13,13 @@ bio-img-top: 30px
 bio-img-left: 20px
 -->
 
-
 <style>
-  .bio-photo {
-    margin-top: {{ page.bio-img-top | default: '0px' }};
-    margin-left: {{ page.bio-img-left | default: '0px' }};
+  :root {
+    --bio-img-top: {{ page.bio-img-top | default: "100%" }};
+    --bio-img-left: {{ page.bio-img-left | default: "30px" }};
   }
 </style>
+
 
 
 <div class="container py-4">
@@ -28,8 +29,8 @@ bio-img-left: 20px
       <!-- LEFT SIDE -->
 <div class="col-md-4 bio-left">
 
-  <img src="{{ '/assets/img/juanluna3.png' | relative_url }}"
-     class="bio-photo"
+  <img class="bio-avatar"
+     src="{{ '/assets/img/juanluna3.png' | relative_url }}"
      alt="Photo of Juan Luna">
      
   <div class="bio-side-text">
