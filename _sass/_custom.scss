@@ -171,5 +171,66 @@ GALLERY
 }
 
 /* =========================
- GALLERY MORE
+ GALLERY MORE====================================================
    ========================= */
+
+.browse-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+/* LEFT SIDEBAR (20%) */
+.browse-sidebar {
+  flex: 0 0 20%;
+  max-width: 20%;
+
+  position: sticky;
+  top: 90px; /* keeps it below navbar */
+  height: fit-content;
+
+  padding: 15px;
+  border-radius: 12px;
+
+  background: rgba(10, 10, 15, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* RIGHT CONTENT (80%) */
+.browse-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* =========================
+   FILTER BUTTON STYLE (optional polish)
+   ========================= */
+
+.browse-filters button {
+  text-align: left;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.browse-filters button:hover {
+  transform: translateX(4px);
+}
+
+/* =========================
+   RESPONSIVE (MOBILE STACK)
+   ========================= */
+
+@media (max-width: 768px) {
+  .browse-layout {
+    flex-direction: column;
+  }
+
+  .browse-sidebar {
+    position: relative;
+    max-width: 100%;
+    flex: 1;
+    top: 0;
+  }
+}
