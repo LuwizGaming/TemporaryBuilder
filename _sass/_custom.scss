@@ -57,22 +57,26 @@
    NAVBAR TOGGLER FIX
    ========================= */
 
+
 .custom-navbar .navbar-toggler {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(10, 10, 15, 0.5); /* same as navbar */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 8px;
   padding: 0.4rem 0.6rem;
-  border-radius: 6px;
-  background: rgba(10, 10, 15, 0.4);
-  backdrop-filter: blur(8px);
+  transition: 0.2s ease;
 }
 
-/* hamburger icon (Bootstrap default) */
-.custom-navbar .navbar-toggler-icon {
-  filter: invert(1); /* makes icon white */
-}
-
-/* hover effect */
 .custom-navbar .navbar-toggler:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(10, 10, 15, 0.65);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* hamburger icon */
+.custom-navbar .navbar-toggler-icon {
+  filter: invert(1);
 }
 
 /* =========================
