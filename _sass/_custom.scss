@@ -149,19 +149,27 @@ body {
    BIO IMAGE (RAW + CONTROLLED)
    ========================= */
 
-.bio-photo {
-  display: block;
+/* BIO AVATAR (RESPONSIVE OVERLAY)  */
 
-  width: 100%;
-  max-width: 150; /* 🔥 ADD THIS (controls size) */
-  height: auto;
-
-  margin-top: var(--bio-img-top, 0px);
-  margin-left: var(--bio-img-left, 0px);
-
-  margin-bottom: 20px;
+#home-banner {
+  position: relative;
 }
 
+.bio-avatar {
+  position: absolute;
+
+  top: 100%;
+  left: 30px;
+
+  transform: translateY(-50%);
+
+  width: clamp(100px, 12vw, 160px);
+  height: auto;
+
+  border-radius: 12px;
+
+  z-index: 50;
+}
 
 /* =========================
 GALLERY 
