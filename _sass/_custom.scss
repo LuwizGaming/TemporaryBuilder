@@ -5,7 +5,7 @@
 }
 
 /* =========================
-  NAVBAR
+  NAVBAR very top
    ========================= */
 
 .custom-navbar {
@@ -58,6 +58,36 @@
   background: rgba(255, 255, 255, 0.8);
   border-radius: 2px;
 }
+
+/* BODY PADD */
+body {
+  padding-top: 70px;
+}
+
+/* =========================
+   MOVING NAV
+   ========================= */
+.profile-nav {
+  display: flex;
+  gap: 24px;
+
+  padding: 12px 30px;
+  background: rgba(10,10,15,0.75);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.profile-nav a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.profile-nav a:hover {
+  color: white;
+}
+
 
 /* =========================
    ROLLECTION BANNER
