@@ -173,22 +173,19 @@ GALLERY
 /* =========================
  GALLERY MORE====================================================
    ========================= */
-
 .browse-layout {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  padding-top: 20px;
 }
 
-/* LEFT SIDEBAR (20%) */
+/* LEFT 20% SIDEBAR */
 .browse-sidebar {
-  flex: 0 0 20%;
-  max-width: 20%;
+  width: 20%;
+  min-width: 220px;
 
   position: sticky;
-  top: 90px; /* keeps it below navbar */
-  height: fit-content;
+  top: 90px;
 
   padding: 15px;
   border-radius: 12px;
@@ -198,39 +195,27 @@ GALLERY
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* RIGHT CONTENT (80%) */
+/* RIGHT CONTENT */
 .browse-main {
   flex: 1;
   min-width: 0;
 }
 
-/* =========================
-   FILTER BUTTON STYLE (optional polish)
-   ========================= */
-
-.browse-filters button {
-  text-align: left;
-  border-radius: 8px;
-  transition: 0.2s ease;
+/* REMOVE BOOTSTRAP ROW MARGINS (IMPORTANT) */
+.browse-main .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
-.browse-filters button:hover {
-  transform: translateX(4px);
-}
-
-/* =========================
-   RESPONSIVE (MOBILE STACK)
-   ========================= */
-
+/* MOBILE */
 @media (max-width: 768px) {
   .browse-layout {
     flex-direction: column;
   }
 
   .browse-sidebar {
+    width: 100%;
     position: relative;
-    max-width: 100%;
-    flex: 1;
     top: 0;
   }
 }
