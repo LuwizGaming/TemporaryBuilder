@@ -2,7 +2,7 @@
 title: Biography
 layout: page
 permalink: /biography/
-bio-img-top: -600px
+bio-img-top: -350px
 bio-img-left: 0px
 ---
 
