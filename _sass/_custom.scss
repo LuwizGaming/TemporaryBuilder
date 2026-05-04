@@ -1,27 +1,4 @@
 /* =========================
-   BIO BANNER IMAGE (DIRECT)
-   ========================= */
-
-.bio-banner {
-  width: 100%;
-  height: 320px; /* adjust banner height here */
-  overflow: hidden;
-}
-
-.bio-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;       /* 🔥 this is the crop control */
-  object-position: center; /* change focus point if needed */
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .bio-banner {
-    height: 200px;
-  }
-}
-/* =========================
   NAVBAR
    ========================= */
 
