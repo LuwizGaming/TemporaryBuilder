@@ -169,3 +169,38 @@ GALLERY
 #browseItems .card:hover .card-img-top {
   transform: scale(1.08);
 }
+
+/* =========================
+ GALLERY MORE
+   ========================= */
+.browse-layout {
+  display: flex;
+  gap: 20px;
+}
+
+/* LEFT SIDEBAR */
+.browse-sidebar {
+  width: 22%;
+  min-width: 220px;
+
+  position: sticky;
+  top: 90px; /* adjust for navbar */
+  height: fit-content;
+}
+
+/* RIGHT CONTENT */
+.browse-main {
+  width: 78%;
+}
+
+/* MOBILE STACK */
+@media (max-width: 768px) {
+  .browse-layout {
+    flex-direction: column;
+  }
+
+  .browse-sidebar,
+  .browse-main {
+    width: 100%;
+  }
+}
