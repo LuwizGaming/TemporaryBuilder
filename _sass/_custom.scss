@@ -173,49 +173,47 @@ GALLERY
 /* =========================
  GALLERY MORE====================================================
    ========================= */
+/* =========================
+   ANILIST-STYLE BROWSE LAYOUT
+   ========================= */
+
 .browse-layout {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  width: 100%;
 }
 
-/* LEFT 20% SIDEBAR */
+/* LEFT SIDEBAR */
 .browse-sidebar {
-  width: 20%;
-  min-width: 220px;
+  flex: 0 0 22%;   /* ~20% like you wanted */
+  max-width: 260px;
 
   position: sticky;
-  top: 90px;
+  top: 90px; /* keeps it below navbar */
+  height: fit-content;
 
-  padding: 15px;
-  border-radius: 12px;
-
-  background: rgba(10, 10, 15, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  padding: 10px;
 }
 
 /* RIGHT CONTENT */
 .browse-main {
   flex: 1;
-  min-width: 0;
+  min-width: 0; /* prevents overflow breaking layout */
 }
 
-/* REMOVE BOOTSTRAP ROW MARGINS (IMPORTANT) */
-.browse-main .row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
+/* =========================
+   MOBILE FIX (IMPORTANT)
+   ========================= */
 
-/* MOBILE */
 @media (max-width: 768px) {
   .browse-layout {
     flex-direction: column;
   }
 
   .browse-sidebar {
-    width: 100%;
     position: relative;
     top: 0;
+    max-width: 100%;
   }
 }
