@@ -1,3 +1,4 @@
+{% unless page.hide-banner == true %}
 {% if site.data.theme.featured-image %}
 <style>
 #home-banner {
@@ -47,3 +48,4 @@
     </div>
 </div>
 {%- endif -%}
+{% endunless %}
