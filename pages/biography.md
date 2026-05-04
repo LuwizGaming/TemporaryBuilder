@@ -3,7 +3,6 @@ title: Biography
 layout: page
 permalink: /biography/
 
-bio-img-top: 100%
 bio-img-left: 30px
 ---
 
@@ -29,9 +28,13 @@ bio-img-left: 20px
       <!-- LEFT SIDE -->
 <div class="col-md-4 bio-left">
 
+  <div class="bio-header">
+
   <img class="bio-avatar"
-     src="{{ '/assets/img/juanluna3.png' | relative_url }}"
-     alt="Photo of Juan Luna">
+       src="{{ '/assets/img/juanluna3.png' | relative_url }}"
+       alt="Photo of Juan Luna">
+
+</div>
      
   <div class="bio-side-text">
     <p><strong>Quick Info:</strong></p>
