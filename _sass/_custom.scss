@@ -54,6 +54,52 @@
 }
 
 /* =========================
+   ANIMATED HAMBURGER ICON
+   ========================= */
+
+.custom-hamburger {
+  width: 22px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.custom-hamburger span {
+  height: 2px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* when menu is open (Bootstrap adds .collapsed toggle state) */
+.navbar-toggler.collapsed .custom-hamburger span:nth-child(1) {
+  transform: rotate(0) translate(0, 0);
+}
+
+.navbar-toggler.collapsed .custom-hamburger span:nth-child(2) {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .custom-hamburger span:nth-child(3) {
+  transform: rotate(0) translate(0, 0);
+}
+
+/* OPEN STATE (when NOT collapsed) */
+.navbar-toggler:not(.collapsed) .custom-hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler:not(.collapsed) .custom-hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .custom-hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/* =========================
    NAVBAR TOGGLER FIX
    ========================= */
 
