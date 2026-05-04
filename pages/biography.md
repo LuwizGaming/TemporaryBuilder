@@ -2,6 +2,7 @@
 title: Biography
 layout: page
 permalink: /biography/
+image: /assets/img/background.jpg
 ---
 
 <div class="container py-4">
