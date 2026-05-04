@@ -146,35 +146,20 @@ body {
 }
 
 /* =========================
-   BIO ANILIST AVATAR OVERLAP
+   BIO IMAGE (RAW + CONTROLLED)
    ========================= */
-#home-banner {
-  height: 300px;
+
+.bio-photo {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin-top: var(--bio-img-top, 0px);
+  margin-left: var(--bio-img-left, 0px);
+
+  margin-bottom: 20px;
 }
-.bio-left {
-  position: relative;
-}
-
-/* avatar becomes floating element */
-.bio-avatar {
-  position: absolute;
-
-  top: -120px;   /* pulls it UP into banner space */
-  left: 30px;    /* your requested padding */
-
-  width: 140px;
-  height: 140px;
-
-  object-fit: cover;
-
-  border-radius: 12px; /* AniList style */
-  border: 3px solid rgba(10, 10, 15, 0.85);
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-
-  z-index: 50;
-}
-
 
 
 /* =========================
