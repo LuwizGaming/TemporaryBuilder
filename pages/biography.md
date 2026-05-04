@@ -5,12 +5,11 @@ permalink: /biography/
 bio-img-top: -20px
 bio-img-left: 0px
 
-<!--
 
+<!--
 bio-img-top: -40px
 bio-img-top: 30px
 bio-img-left: 20px
-
 -->
 ---
 
