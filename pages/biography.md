@@ -3,6 +3,9 @@ title: Biography
 layout: page
 permalink: /biography/
 ---
+<div class="bio-banner">
+  <img src="{{ '/assets/img/background1.jpg' | relative_url }}" alt="Banner">
+</div>
 
 <div class="container py-4">
 
