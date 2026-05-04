@@ -3,6 +3,7 @@ title: Biography
 layout: page
 permalink: /biography/
 image: /assets/img/background.jpg
+show_banner: false
 ---
 
 <div class="container py-4">
