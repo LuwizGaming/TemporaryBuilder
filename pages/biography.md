@@ -2,7 +2,25 @@
 title: Biography
 layout: page
 permalink: /biography/
+bio-img-top: -20px
+bio-img-left: 0px
+
+<!--
+
+bio-img-top: -40px
+bio-img-top: 30px
+bio-img-left: 20px
+
+-->
 ---
+
+<style>
+  .bio-photo {
+    margin-top: {{ page.bio-img-top | default: '0px' }};
+    margin-left: {{ page.bio-img-left | default: '0px' }};
+  }
+</style>
+
 
 <div class="container py-4">
 
