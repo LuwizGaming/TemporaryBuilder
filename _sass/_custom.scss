@@ -1,4 +1,36 @@
 /* =========================
+   DESKTOP DEFAULT
+   ========================= */
+
+#home-banner {
+  background-image: url('{{ site.data.theme.banner.desktop }}');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 992px) {
+  #home-banner {
+    background-image: url('{{ site.data.theme.banner.tablet | default: site.data.theme.banner.desktop }}');
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+  #home-banner {
+    background-image: url('{{ site.data.theme.banner.mobile }}');
+    height: 220px;
+  }
+}
+
+/* =========================
   NAVBAR
    ========================= */
 
