@@ -9,11 +9,11 @@ permalink: /biography/
   <div class="row">
     
       <!-- LEFT SIDE -->
-<div class="col-md-4">
+<div class="col-md-4 bio-left">
 
   <img src="{{ '/assets/img/juanluna.jpg' | relative_url }}"
-       class="img-fluid mb-3 bio-photo"
-       alt="Photo of Juan Luna">
+     class="bio-avatar"
+     alt="Photo of Juan Luna">
 
   <div class="bio-side-text">
     <p><strong>Quick Info:</strong></p>
