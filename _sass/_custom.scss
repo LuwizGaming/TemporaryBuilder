@@ -54,52 +54,6 @@
 }
 
 /* =========================
-   ANIMATED HAMBURGER ICON
-   ========================= */
-
-.custom-hamburger {
-  width: 22px;
-  height: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.custom-hamburger span {
-  height: 2px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-/* when menu is open (Bootstrap adds .collapsed toggle state) */
-.navbar-toggler.collapsed .custom-hamburger span:nth-child(1) {
-  transform: rotate(0) translate(0, 0);
-}
-
-.navbar-toggler.collapsed .custom-hamburger span:nth-child(2) {
-  opacity: 1;
-}
-
-.navbar-toggler.collapsed .custom-hamburger span:nth-child(3) {
-  transform: rotate(0) translate(0, 0);
-}
-
-/* OPEN STATE (when NOT collapsed) */
-.navbar-toggler:not(.collapsed) .custom-hamburger span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.navbar-toggler:not(.collapsed) .custom-hamburger span:nth-child(2) {
-  opacity: 0;
-}
-
-.navbar-toggler:not(.collapsed) .custom-hamburger span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-/* =========================
    NAVBAR TOGGLER FIX
    ========================= */
 
@@ -120,7 +74,17 @@
   border-color: rgba(255, 255, 255, 0.35);
 }
 
-/* hamburger icon */
+.custom-navbar .navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(10, 10, 15, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+}
+
+/* Bootstrap hamburger icon */
 .custom-navbar .navbar-toggler-icon {
   filter: invert(1);
 }
