@@ -1,22 +1,14 @@
----
-layout: page
-custom-foot: js/browse-js.html
----
-
-{{ content }}
-
 <div class="browse-layout">
 
-  <!-- ================= LEFT SIDEBAR ================= -->
+  <!-- LEFT SIDEBAR -->
   <aside class="browse-sidebar">
 
-    <!-- SEARCH -->
     <form role="search" id="browseFilter" onsubmit="submitFilter(); return false;">
       <input type="text"
              class="form-control mb-2"
              id="filterTextBox"
              placeholder="Search...">
-      
+
       <div class="d-flex gap-2 mb-3">
         <button class="btn btn-success w-100" type="submit">Search</button>
         <button class="btn btn-outline-secondary w-100"
@@ -49,11 +41,8 @@ custom-foot: js/browse-js.html
       </div>
     </div>
 
-    <!-- PLACE FOR EXTRA FILTERS -->
+    <!-- EXTRA FILTERS -->
     <div class="browse-filters">
-      <p class="text-muted small">Filters</p>
-
-      <!-- Example placeholders -->
       <button class="btn btn-sm btn-outline-light w-100 mb-2">Painting</button>
       <button class="btn btn-sm btn-outline-light w-100 mb-2">Illustration</button>
       <button class="btn btn-sm btn-outline-light w-100 mb-2">Sketch</button>
@@ -61,14 +50,14 @@ custom-foot: js/browse-js.html
 
   </aside>
 
-  <!-- ================= MAIN CONTENT ================= -->
+  <!-- RIGHT CONTENT -->
   <main class="browse-main">
 
     <div id="loadingIcon" class="text-center">
       <div class="spinner-border text-dark" role="status"></div>
     </div>
 
-    <div class="row" id="browseItems"></div>
+    <div id="browseItems"></div>
 
   </main>
 
