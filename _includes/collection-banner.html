@@ -1,6 +1,7 @@
 {% if page.layout == "home-infographic" and site.data.theme.featured-image %}
 <style>
 #home-banner {
+    height: 320px;
     background-image: url('{% include image/featured-image.html %}');
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,11 +11,7 @@
     padding-top: {{ site.data.theme.home-title-y-padding | default: '5em' }};
     padding-bottom: {{ site.data.theme.home-title-y-padding | default: '5em' }};
 }
-@media screen and (max-width: 576px) {
-    #home-title-box {
-        max-height: 500px;
-    }
-}
+
 </style>
 <div id="home-banner" class="container-fluid mb-0 p-0">
     
