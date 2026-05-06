@@ -25,9 +25,7 @@ permalink: /biography/
   <div class="bio-right">
     <p>
 Luna gained international recognition through his masterpiece Spoliarium, which won a gold medal at the Exposición Nacional de Bellas Artes in Madrid in 1884. This achievement became a symbol of Filipino excellence during Spanish rule. He also created notable works such as The Blood Compact and España y Filipinas, showcasing his mastery of historical and allegorical painting.<br><br>
-
 Awards & Recognition<br><br>
-
 Gold Medal, Exposición Nacional de Bellas Artes (Madrid, 1884)<br>
 Silver Medal, Exposición Nacional de Bellas Artes (Madrid, 1881)<br>
 Among the first Filipinos to gain international acclaim in Europe
