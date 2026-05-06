@@ -1,6 +1,13 @@
-<div class="profile-nav">
-  <a href="/biography/">Overview</a>
-  <a href="/biography/">Biography</a>
-  <a href="/gallery/">Gallery</a>
-  <a href="/stats/">Stats</a>
+<div class="profile-nav d-flex justify-content-center gap-3">
+
+  <a href="{{ '/biography/' | relative_url }}"
+     class="{% if page.url contains 'biography' %}active{% endif %}">
+    Overview
+  </a>
+
+  <a href="{{ '/gallery/' | relative_url }}"
+     class="{% if page.url contains 'gallery' %}active{% endif %}">
+    Gallery
+  </a>
+
 </div>
