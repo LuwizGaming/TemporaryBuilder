@@ -234,6 +234,23 @@ GALLERY
   object-fit: cover;
 }
 
+/* remove white card box */
+#browseItems .card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* remove the white caption area */
+#browseItems .card-body {
+  background: transparent;
+}
+
+/* make text readable */
+#browseItems .card-title,
+#browseItems .card-text {
+  color: rgba(255, 255, 255, 0.9);
+}
 
 /* =========================
  GALLERY HOVER ZOOM
