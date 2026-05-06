@@ -106,9 +106,46 @@ main#maincontent,
   color: white;
   border-bottom: 2px solid white;
 }
+/* =========================
+   BIOGRPAHY
+   ========================= */
+.bio-split {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* LEFT COLUMN (smaller like AniList) */
+.bio-left {
+  flex: 0 0 30%;
+  color: rgba(255,255,255,0.8);
+}
+
+/* RIGHT COLUMN (main content) */
+.bio-right {
+  flex: 1;
+  color: rgba(255,255,255,0.9);
+}
+
+/* spacing */
+.bio-left h2,
+.bio-right h2 {
+  margin-bottom: 10px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .bio-split {
+    flex-direction: column;
+  }
+
+  .bio-left {
+    flex: 1;
+  }
+}
 
 /* =========================
-   ROLLECTION BANNER
+   COLLECTION BANNER
    ========================= */
 
 .collection-banner {
