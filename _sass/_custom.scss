@@ -291,3 +291,12 @@ main#maincontent {
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  main#maincontent,
+  .container,
+  .container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
