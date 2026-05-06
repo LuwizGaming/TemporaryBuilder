@@ -15,10 +15,8 @@ permalink: /biography/
   <div class="bio-left">
     <div class="bio-card">
     <p>
-      Juan Luna was a Filipino painter, sculptor, and nationalist figure during the Spanish colonial period. He is regarded as one of       the greatest Filipino artists, whose works symbolized struggle, identity, and national pride.<br><br>
-    Born on October 23, 1857, in Badoc, Ilocos Norte, Luna first studied navigation before pursuing art. He trained in Manila and           later in Spain at the Real Academia de Bellas Artes de San Fernando.<br><br>
-    Death
-    He died on December 7, 1899, in Hong Kong.
+      <i class="bi bi-calendar3"></i> October 25, 1857<br><br>
+      <i class="bi bi-geo-alt"></i> Badoc, Ilocos Norte, Philippines
     </p>
   </div>
   </div>
