@@ -13,9 +13,9 @@ permalink: /biography/
 
   <!-- LEFT SIDE -->
   <div class="bio-left">
-    <h2>Overview</h2>
+    <h3>Juan Luna de San Pedro y Novicio Ancheta</h3>
     <p>
-      Short summary of Juan Luna — gwho he is, key highlights, importance.
+      Born on October 25, 1857, and Died on December 7, 1899 (42 years old)
     </p>
   </div>
 
