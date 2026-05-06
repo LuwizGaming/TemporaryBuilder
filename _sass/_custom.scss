@@ -22,6 +22,16 @@ main#maincontent,
 }
 
 /* =========================
+   GLOBAL CONTENT WIDTH (LIKE WIKIPEDIA)
+   ========================= */
+
+main#maincontent {
+  max-width: 1700px;
+  margin: 0 auto;      /* center horizontally */
+  width: 100%;
+}
+
+/* =========================
   NAVBAR very top
    ========================= */
 
@@ -219,15 +229,7 @@ GALLERY
   object-fit: cover;
 }
 
-/* =========================
-   GLOBAL CONTENT WIDTH (LIKE WIKIPEDIA)
-   ========================= */
 
-main#maincontent {
-  max-width: 1700px;
-  margin: 0 auto;      /* center horizontally */
-  width: 100%;
-}
 /* =========================
  GALLERY HOVER ZOOM
    ========================= */
@@ -247,6 +249,16 @@ main#maincontent {
 /* =========================
  GALLERY MORE====================================================
    ========================= */
+#browseItems {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  padding: 16px;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 /* =========================
    ANILIST-STYLE BROWSE LAYOUT
    ========================= */
