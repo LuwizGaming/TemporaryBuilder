@@ -15,7 +15,7 @@ permalink: /biography/
   <div class="bio-left">
     <h2>Overview</h2>
     <p>
-      Short summary of Juan Luna — who he is, key highlights, importance.
+      Short summary of Juan Luna — gwho he is, key highlights, importance.
     </p>
   </div>
 
