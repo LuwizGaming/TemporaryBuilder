@@ -64,12 +64,12 @@ On December 4, 1886, Luna married María de la Paz Pardo de Tavera, a sister of 
 
 Luna was acquitted of the charges on February 8, 1893, on the grounds that it had been a crime of passion. Temporary insanity; the "unwritten law" at the time forgave men for killing unfaithful wives.[11] He was ordered to pay the Pardo de Taveras a sum of 1,651 francs and eighty three cents, and an additional 25 francs for postage, in addition to the one franc of claims for damages ("dommages-intérêts"). Five days later, Luna went to Madrid with his brother, Antonio Luna, and his son, Andrés.<br><br>
 
-<h3>Final years/h3><br>
+<h3>Final years</h3><br>
 In 1894 Luna moved back to the Philippines and traveled to Japan in 1896, returning during the Philippine Revolution of the Cry of Balintawak. On September 16, 1896, he and his brother Antonio Luna were arrested by Spanish authorities for being involved with the Katipunan rebel army.[13] Despite his imprisonment, Luna was still able to produce a work of art which he gave to a visiting priest. He was pardoned by the Spanish courts on May 27, 1897, and was released from prison and he traveled back to Spain in July.[14]: 394  He returned to Manila in November 1898.[14]: 394  In 1898, he was appointed by the executive board of the Philippine revolutionary government as a member of the Paris delegation which was working for the diplomatic recognition of the República Filipina (Philippine Republic). In 1899, upon the signing of the Treaty of Paris (1898),[15] Luna was named a member of the delegation to Washington, D.C. to press for the recognition of the Philippine government.
 
 He traveled back to the Philippines in December 1899 upon hearing of the murder of his brother Antonio by the Kawit Battalion in Cabanatuan.<br><br>
 
-<h3>Death/h3><br>
+<h3>Death</h3><br>
 He traveled to Hong Kong and died there on December 7, 1899, from cardiac arrest. His remains were buried in Hong Kong and in 1920 were exhumed and kept in Andrés Luna's house, to be later transferred to a niche at the Crypt of San Agustin Church in the Philippines. Five years later, Juan would be reinstated as a world-renowned artist and Peuple et Rois, his last major work, was acclaimed as the best entry to the Saint Louis World's Fair in St. Louis, Missouri.[16] Some of his paintings were destroyed by fire in World War II.
     </p>
   </div>
