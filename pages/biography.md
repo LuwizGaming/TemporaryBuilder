@@ -35,7 +35,7 @@ Among the first Filipinos to gain international acclaim in Europe
 Political Involvement<br><br>
 Luna was associated with reformists like José Rizal, Marcelo H. del Pilar, and Graciano López Jaena. He supported the Propaganda Movement, advocating for reforms and equal rights for Filipinos under Spanish rule. His works reflected themes of oppression and resistance.
 <br><br>
-Personal Life & Legacy
+Personal Life & Legacy<br><br>
 Luna’s life included personal struggles, including a controversial incident in 1892 involving his family. Despite this, his legacy remains significant. Today, he is remembered as a pioneer of Filipino art and a symbol of national identity and pride.
     </p>
   </div>
