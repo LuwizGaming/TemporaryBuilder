@@ -19,6 +19,8 @@ permalink: /biography/
       <i class="bi bi-geo-alt" style="margin-right:6px;"></i> Badoc, Ilocos Norte, Philippines
     </p>
   </div>
+    <br>
+    <br>
     <div class="bio-card">
     <p>
       <i class="bi bi-calendar3" style="margin-right:6px;"></i> October 25, 1857<br><br>
