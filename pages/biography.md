@@ -43,7 +43,7 @@ permalink: /biography/
   
 <div class="bio-card">
 
-  <h3>Early Life</h3>
+  <h4 class="text-center">Early Life</h4><br>
 
   <p>
     Born in Badoc, Ilocos Norte, Juan Luna was the third of seven children of Joaquín Luna de San Pedro y Posadas and Laureana Novicio y Ancheta. In 1861, the Luna family moved to Manila, where he studied at the Ateneo Municipal de Manila and earned his Bachelor of Arts degree. He showed exceptional talent in drawing and painting from an early age and was heavily influenced by his brother, Manuel N. Luna.
@@ -61,7 +61,7 @@ permalink: /biography/
     Luna’s reputation began to grow after participating in the Exposición Nacional de Bellas Artes in Madrid. In 1881, his painting <em>La Muerte de Cleopatra</em> won a silver medal, earning him recognition and a scholarship from the Ayuntamiento of Manila.
   </p>
 
-  <h3>Travel Abroad</h3>
+  <h4 class="text-center">Travel Abroad</h4><br>
 
   <p>
     In 1883, Luna began work on what would become his most celebrated masterpiece, <em>Spoliarium</em>. The massive painting was exhibited at the 1884 Exposición Nacional de Bellas Artes in Madrid, where it won one of the exhibition’s gold medals. The achievement marked a historic moment for Filipino artists during the Spanish colonial period.
@@ -79,7 +79,7 @@ permalink: /biography/
     Around this period, Luna completed <em>El pacto de sangre</em>, a historical painting depicting the Sandugo blood compact between Datu Sikatuna and Miguel López de Legazpi. The artwork later became one of the most recognized historical paintings in the Philippines.
   </p>
 
-  <h3>Artistic Career</h3>
+  <h4 class="text-center">Artistic Career</h4><br>
 
   <p>
     By the 1890s, Luna began shifting away from grand classical themes and focused more on realism and social commentary. Influenced by the writings of Karl Marx and Émile de Laveleye, his paintings increasingly reflected social conditions and political ideas.
@@ -89,7 +89,7 @@ permalink: /biography/
     One of the best examples of this transition was <em>Les Ignores</em>, painted between 1890 and 1891, which portrayed the funeral procession of a poor laborer. Other notable works from this period included <em>The Parisian Life</em> and the revolutionary-themed series <em>Peuple et Rois</em>.
   </p>
 
-  <h3>Marriage</h3>
+  <h4 class="text-center">Marriage</h4><br>
 
   <p>
     On December 4, 1886, Luna married María de la Paz Pardo de Tavera, sister of Félix and Trinidad Pardo de Tavera. The couple lived in Europe and had two children, although their daughter died at a young age.
@@ -99,7 +99,7 @@ permalink: /biography/
     Their marriage later deteriorated after Luna accused Paz of infidelity. On September 22, 1892, he shot and killed his wife and mother-in-law and wounded his brother-in-law, Trinidad. Luna was arrested and charged with murder but was acquitted in 1893 under the “crime of passion” defense recognized at the time.
   </p>
 
-  <h3>Final Years</h3>
+  <h4 class="text-center">Final Years</h4><br>
 
   <p>
     During the Philippine Revolution, Luna and his brother Antonio Luna were arrested by Spanish authorities for alleged involvement with the Katipunan. After his release in 1897, Luna returned to Spain before eventually going back to the Philippines in 1898.
@@ -109,7 +109,7 @@ permalink: /biography/
     He later served as part of the diplomatic delegation of the First Philippine Republic, working toward international recognition of the Philippine government. In 1899, Luna returned to the Philippines after learning about the assassination of his brother Antonio.
   </p>
 
-  <h3>Death</h3>
+  <h4 class="text-center">Death</h4><br>
 
   <p>
     Juan Luna traveled to Hong Kong later in 1899, where he died of cardiac arrest on December 7 at the age of 42. His remains were eventually transferred to the Philippines.
