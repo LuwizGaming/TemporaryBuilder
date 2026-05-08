@@ -14,7 +14,7 @@ permalink: /biography/
   <!-- LEFT SIDE -->
   <div class="bio-left">
     <div class="bio-card">
-      <img src="{{ '/assets/img/juan-luna.png' | relative_url }}"
+      <img src="{{ '/assets/img/juanluna3.png' | relative_url }}"
      alt="Juan Luna"
      class="img-fluid rounded">
   </div>
