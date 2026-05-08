@@ -255,36 +255,7 @@ GALLERY
 #browseItems .card-text {
   color: rgba(255, 255, 255, 0.9);
 }
-/*===================================*/
-#browseItems .card {
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  border: none;
-}
-#browseItems .card-body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(6px);
-
-  padding: 10px;
-}
-#browseItems .card-title {
-  color: white;
-  font-size: 0.9rem;
-  margin: 0;
-  font-weight: 600;
-}
-
-/* Browse page text */
-.browse-layout {
-  color: white;
-}
-/*===================================*/
 /* =========================
  GALLERY HOVER ZOOM
    ========================= */
@@ -341,7 +312,40 @@ GALLERY
   flex: 1;
   min-width: 0; /* prevents overflow breaking layout */
 }
+/*===================================*/
+#browseItems .card {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+#browseItems .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+
+  padding: 10px;
+}
+#browseItems .card-title {
+  color: white;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+#browseItems .card-title,
+#browseItems .card-text,
+.browse-sidebar,
+.browse-sidebar * ,
+.browse-main,
+.browse-main * {
+  color: white !important;
+}
+/*===================================*/
 /* =========================
    MOBILE FIX (IMPORTANT)
    ========================= */
