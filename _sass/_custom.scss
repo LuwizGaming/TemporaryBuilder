@@ -276,14 +276,13 @@ GALLERY
  GALLERY MORE====================================================
    ========================= */
 #browseItems {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
   padding: 16px;
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
+  backdrop-filter: blur(10px) brightness(1.15);
+  -webkit-backdrop-filter: blur(10px) brightness(1.15);
 
 /* =========================
    ANILIST-STYLE BROWSE LAYOUT
