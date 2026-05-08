@@ -28,18 +28,23 @@ permalink: /biography/
   </div>
   <!-- RIGHT SIDE -->
   <div class="bio-right">
-  <div class="bio-card">
-    <h4 class="text-center">Overview</h4><br>
-    
-    <p class="text-justify">
-    Juan Luna de San Pedro y Novicio (October 25, 1857 – December 7, 1899) was a Filipino painter, sculptor and a political activist of the Philippine Revolution during the late 19th century. He became one of the first recognized Philippine artists.<br><br>
-      
-    His winning of the gold medal in the 1884 Madrid Exposition of Fine Arts, along with the silver win of fellow Filipino painter Félix Resurrección Hidalgo, prompted a celebration which was a significant highlight in the memoirs of members of the Propaganda         Movement, with the fellow Ilustrados toasting the two painters' good health and the brotherhood between Spain and the Philippines.<br><br>
+<div class="bio-card">
 
-    Well regarded for work done in the manner of European academies of his time, Luna painted literary and historical scenes, some with an underscore of political commentary. His allegorical works were inspired by classical balance, and often showed figures in theatrical poses.
-    
+  <h4 class="text-center">Overview</h4>
+
+  <p>
+    Juan Luna de San Pedro y Novicio (October 25, 1857 – December 7, 1899) was a Filipino painter, sculptor, and political activist during the Philippine Revolution. He became one of the first internationally recognized Filipino artists.
   </p>
-  </div><br>
+
+  <p>
+    His gold medal win at the 1884 Madrid Exposition of Fine Arts, along with Félix Resurrección Hidalgo’s silver medal, was celebrated by members of the Propaganda Movement. It symbolized Filipino artistic excellence and unity among ilustrados.
+  </p>
+
+  <p>
+    Known for his European academic painting style, Luna created historical and literary works often infused with political meaning. His allegorical paintings showed strong classical influence and dramatic composition.
+  </p>
+
+</div>
   
 <div class="bio-card">
 
