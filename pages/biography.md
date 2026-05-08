@@ -31,9 +31,9 @@ permalink: /biography/
   <div class="bio-right">
   <div class="bio-card">
     <h4 class="text-center">Overview</h4><br>
-    <p>
-      
-    Juan Luna de San Pedro y Novicio ( Spanish: [ˈxwan ˈluna],  Tagalog: [hwɐn ˈluna]; October 25, 1857 – December 7, 1899) was a Filipino painter, sculptor and a political activist of the Philippine Revolution during the late 19th century. He became one of the       first recognized Philippine artists.
+    
+    <p class="text-justify">
+    Juan Luna de San Pedro y Novicio (October 25, 1857 – December 7, 1899) was a Filipino painter, sculptor and a political activist of the Philippine Revolution during the late 19th century. He became one of the       first recognized Philippine artists.
       
     His winning of the gold medal in the 1884 Madrid Exposition of Fine Arts, along with the silver win of fellow Filipino painter Félix Resurrección Hidalgo, prompted a celebration which was a significant highlight in the memoirs of members of the Propaganda         Movement, with the fellow Ilustrados toasting the two painters' good health and the brotherhood between Spain and the Philippines.
 
