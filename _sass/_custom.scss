@@ -313,23 +313,23 @@ GALLERY
   min-width: 0; /* prevents overflow breaking layout */
 }
 /*===================================*/
-#browseItems .card {
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  border: none;
-}
-#browseItems .card-body {
+#browseItems .overlay-content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(6px);
-
   padding: 10px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0)
+  );
+
+  z-index: 2;
 }
+
 #browseItems .card-title {
   color: white;
   font-size: 0.9rem;
@@ -344,6 +344,10 @@ GALLERY
 .browse-main,
 .browse-main * {
   color: white !important;
+}
+#browseItems .overlay-content a {
+  color: white !important;
+  text-decoration: none;
 }
 /*===================================*/
 /* =========================
