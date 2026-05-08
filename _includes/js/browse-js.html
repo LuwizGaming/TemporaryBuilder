@@ -73,16 +73,9 @@ function makeCard(obj) {
     }
 
     // HOVER
-    card += '<div class="overlay-content"></div>';
-
-    // TITLE BELOW IMAGE = STILL TITLE (clean label style)
-    card += '<div class="card-body text-center">';
-    card += '<h3 class="card-title h6">';
-    card += '<a href="' + itemHref + '" class="text-dark">' + obj.title + '</a>';
-    card += '</h3>';
+    card += '<div class="overlay-content">';
+    card += '<a href="' + itemHref + '">' + obj.title + '</a>';
     card += '</div>';
-
-    card += '</div></div>';
 
     // NON-IMAGE THUMB (optional fallback)
     if (thumbSrc && !imgSrc) {
