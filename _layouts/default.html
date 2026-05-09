@@ -12,7 +12,9 @@
     
     <!-- TOP HEADER (KEEP OUTSIDE GRID) --> 
     {% include collection-nav.html %}
-    {% include collection-banner.html %} 
+    {% unless page.hide_banner %}
+      {% include collection-banner.html %}
+    {% endunless %}
 
     
     {% unless page.hide_profile_nav %}
