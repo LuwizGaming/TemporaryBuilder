@@ -45,7 +45,7 @@ permalink: /biography/
   </p>
 
 </div>
-  
+  <br>
 <div class="bio-card">
 
   <h4 class="text-center">Early Life</h4><br>
