@@ -24,17 +24,22 @@ layout: page
 
   <div class="timeline-line"></div>
 
-  {% assign sorted_items = site.data.demo-metadata | sort: "date" %}
+  {% assign sorted_items = site.data.demo-metadata | sort: "year" %}
 
   {% for item in sorted_items %}
 
   <div class="timeline-item">
 
     <div class="timeline-year">
-      {{ item.date }}
+      {{ item.year }}
     </div>
 
-    <img src="{{ item.image_small | relative_url }}" alt="{{ item.title }}">
+    <img src="{% if item.filename contains 'http' %}
+      {{ item.filename }}
+    {% else %}
+      {{ '/objects/' | append: item.filename | relative_url }}
+    {% endif %}"
+    alt="{{ item.title }}">
 
     <h4>{{ item.title }}</h4>
 
@@ -45,6 +50,3 @@ layout: page
   {% endfor %}
 
 </div>
-
-</div>
-
