@@ -142,7 +142,7 @@ main#maincontent {
 
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
+  border-radius: 0px;
 
   overflow: hidden;
   text-align: center;
@@ -173,6 +173,29 @@ main#maincontent {
 
   margin: 0;
   color: white;
+}
+
+.timeline-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-title {
+  margin: 0;
+  padding: 8px 6px;
+}
+
+.timeline-year {
+  margin: 0;
+}
+
+.timeline-item {
+  overflow: hidden;
+  border-radius: 0;
 }
 
 /* =========================
