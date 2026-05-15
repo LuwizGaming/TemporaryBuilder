@@ -20,5 +20,31 @@ layout: page
     Known for his European academic painting style, Luna created historical and literary works often infused with political meaning. His allegorical paintings showed strong classical influence and dramatic composition.
   </p>
 
+<div class="timeline-wrapper">
+
+  <div class="timeline-line"></div>
+
+  {% assign sorted_items = site.data.demo-metadata | sort: "date" %}
+
+  {% for item in sorted_items %}
+
+  <div class="timeline-item">
+
+    <div class="timeline-year">
+      {{ item.date }}
+    </div>
+
+    <img src="{{ item.image_small | relative_url }}" alt="{{ item.title }}">
+
+    <h4>{{ item.title }}</h4>
+
+    <p>{{ item.description }}</p>
+
+  </div>
+
+  {% endfor %}
+
+</div>
+
 </div>
 
