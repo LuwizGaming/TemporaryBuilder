@@ -22,8 +22,6 @@ layout: page
 
 <div class="timeline-wrapper">
 
-  <div class="timeline-line"></div>
-
   {% assign sorted_items = site.data.demo-metadata | sort: "year" %}
 
   {% for item in sorted_items %}
@@ -41,9 +39,9 @@ layout: page
     {% endif %}"
     alt="{{ item.title }}">
 
-    <h4>{{ item.title }}</h4>
-
-    <p>{{ item.description }}</p>
+    <h4 class="timeline-title">
+      {{ item.title }}
+    </h4>
 
   </div>
 
