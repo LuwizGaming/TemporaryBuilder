@@ -10,6 +10,8 @@ body {
 :root {
   --nav-height: 0px;
 }
+
+
 /* =========================
    GLOBAL PAGE SPACING
    ========================= */
@@ -127,7 +129,24 @@ main#maincontent {
   padding: 26px 30px;
 }
 
-/*home page ============================*/ 
+
+/* =========================
+home page ================================================
+   ========================= */
+.home-nav-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: var(--nav-height);
+
+  background: #0e131a;
+
+  z-index: 0;
+}
+
+
 .timeline-wrapper {
   display: flex;
   flex-wrap: nowrap;
