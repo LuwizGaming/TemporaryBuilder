@@ -125,6 +125,17 @@ main#maincontent {
 }
 
 /*home page ============================*/ 
+body.home {
+  background: linear-gradient(
+    to bottom,
+    white 0px,
+    white 120px,
+    #212121 120px,
+    #212121 100%
+  );
+}
+
+
 .timeline-wrapper {
   display: flex;
   flex-wrap: nowrap;
