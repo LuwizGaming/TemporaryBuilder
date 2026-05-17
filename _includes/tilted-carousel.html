@@ -1,0 +1,142 @@
+<div id="app"></div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+  .perspective-midrange {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  /* Tailored scoping to prevent breaking CollectionBuilder theme layout elements */
+  #app-carousel-root {
+    min-height: 75vh;
+    background-color: #ececec;
+    font-family: "Bricolage Grotesque", sans-serif;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    user-select: none;
+  }
+</style>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+  import React, { useState, useEffect } from "https://esm.sh/react@19"
+  import { createRoot } from "https://esm.sh/react-dom@19/client"
+  import { motion } from "https://esm.sh/motion/react"
+  import { ChevronLeft, ChevronRight } from "https://esm.sh/lucide-react"
+
+  const App = () => {
+    const [assets, setAssets] = useState([]);
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    // Fetch live metadata dynamically from CollectionBuilder asset paths
+    useEffect(() => {
+      fetch('{{ "/assets/data/metadata.json" | relative_url }}')
+        .then(res => res.json())
+        .then(data => {
+          // Parse only item collection objects containing images
+          const filteredItems = data
+            .filter(item => item.format && item.format.includes('image'))
+            .map(item => ({
+              src: item.filename ? '{{ "/objects/" | relative_url }}' + item.filename : item.image_small,
+              title: item.title || "Untitled File"
+            }))
+            .slice(0, 15); // Performance limitation ceiling boundary
+
+          if(filteredItems.length > 0) {
+            setAssets(filteredItems);
+            setActiveIndex(Math.floor(filteredItems.length / 2)); // Start centered
+          }
+        })
+        .catch(err => console.error("Error connecting with collection data asset: ", err));
+    }, []);
+
+    if (assets.length === 0) return null;
+
+    const toPrev = () => {
+      setActiveIndex(prev => Math.max(0, prev - 1));
+    };
+
+    const toNext = () => {
+      setActiveIndex(prev => Math.min(assets.length - 1, prev + 1));
+    };
+
+    const toSlide = (index) => {
+      setActiveIndex(index);
+    };
+
+    return (
+      <div id="app-carousel-root" className="p-2 text-neutral-800">
+        {/* carousel wrapper */}
+        <div className="w-30 md:w-50 mt-8">
+          {/* slides container */}
+          <motion.div 
+            className="flex w-fit" 
+            animate={{ x: `${-activeIndex * 100 / assets.length}%` }}
+            transition={{ type: 'spring', bounce: 0.2, duration: 0.8 }}
+          >
+            {assets.map((item, i) => {
+              const isActive = activeIndex === i;
+              {/* slide */}
+              return (
+                <div className="perspective-midrange" key={i}>
+                  <motion.div 
+                    className="w-30 md:w-50 aspect-3/4 flex flex-col items-center gap-2 will-change-[transform,scale]"
+                    animate={{ rotateY: (activeIndex - i) * 60, scale: isActive ? 1 : 0.85 }}
+                    transition={{ type: 'spring', bounce: 0.1, duration: 1 }}
+                  >
+                    <img 
+                      src={item.src} 
+                      alt={item.title} 
+                      className="w-full h-full object-cover rounded-lg shadow-sm cursor-pointer" 
+                      onClick={() => toSlide(i)} 
+                    />
+
+                    <motion.div 
+                      className="text-xs md:text-sm whitespace-nowrap will-change-[opacity,filter] font-medium" 
+                      animate={{ filter: isActive ? 'blur(0)' : 'blur(2px)', opacity: isActive ? 1 : 0 }}
+                    >
+                      {item.title}
+                    </motion.div>
+                  </motion.div>
+                </div>
+              );
+            })}
+          </motion.div>
+        </div>
+
+        {/* controls */}
+        <div className="absolute bottom-4 left-0 right-0 w-fit px-4 py-1 mx-auto flex items-center gap-4 justify-center text-neutral-700 rounded-full bg-neutral-200/50 backdrop-blur-xs border border-neutral-200/80 shadow-sm z-30">
+          {/* prev button */}
+          <button onClick={toPrev} className="p-2 cursor-pointer hover:text-black transition-colors">
+            <ChevronLeft size={20} />
+          </button>
+          
+          {/* slide dots */}
+          <div className="w-[180px] flex justify-center items-center gap-2 overflow-hidden">
+            {assets.map((_, i) => (
+              <div 
+                key={i} 
+                onClick={() => toSlide(i)}
+                className={`rounded-full cursor-pointer h-2 transition-[width,background-color] duration-300 ${activeIndex === i ? 'w-7 bg-neutral-800' : 'w-2 bg-neutral-400/60'}`}>
+              </div>
+            ))}
+          </div>
+          
+          {/* next button */}
+          <button onClick={toNext} className="p-2 cursor-pointer hover:text-black transition-colors">
+            <ChevronRight size={20} />
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  const root = createRoot(document.getElementById("app"));
+  root.render(<App />);
+</script>
