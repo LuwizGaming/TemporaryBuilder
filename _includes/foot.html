@@ -19,3 +19,21 @@ window.addEventListener("load", () => {
     .forEach(el => el.style.display = "none");
 });
 </script>
+
+
+
+
+
+<script>
+function updateNavHeight() {
+  const nav = document.querySelector('.custom-navbar');
+  if (!nav) return;
+
+  const height = nav.offsetHeight;
+  document.documentElement.style.setProperty('--nav-height', height + 'px');
+}
+
+// run when page is ready
+window.addEventListener("load", updateNavHeight);
+window.addEventListener("resize", updateNavHeight);
+</script>
