@@ -75,6 +75,8 @@
         {/* carousel wrapper */}
         <div className="w-30 md:w-50 mt-8">
           {/* slides container */}
+          {/* {% raw %} tells Jekyll to stop reading this specific block as Liquid code */}
+          {% raw %}
           <motion.div 
             className="flex w-fit" 
             animate={{ x: `${-activeIndex * 100 / assets.length}%` }}
@@ -82,7 +84,6 @@
           >
             {assets.map((item, i) => {
               const isActive = activeIndex === i;
-              {/* slide */}
               return (
                 <div className="perspective-midrange" key={i}>
                   <motion.div 
@@ -108,6 +109,7 @@
               );
             })}
           </motion.div>
+          {% endraw %}
         </div>
 
         {/* controls */}
