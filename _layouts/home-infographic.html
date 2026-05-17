@@ -4,7 +4,121 @@ layout: page
 ---
 
 <br><br><br><br><br>
-<h1 id="home-header">Juan Luna</h1>
+
+<div class="hero-handwritten">
+  <svg
+    class="handwritten"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 520 120"
+    title="Juan Luna"
+  >
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__good"
+      d="M20 90
+         C20 40, 25 20, 35 20
+         C45 20, 45 50, 40 80
+         C38 95, 30 105, 25 105"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__design"
+      d="M60 90
+         L60 30
+         C60 20, 75 20, 75 35
+         L75 90"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__good"
+      d="M95 90
+         L95 30
+         C95 20, 110 20, 110 40
+         C110 60, 95 60, 95 60
+         C110 60, 115 75, 115 90"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__design"
+      d="M130 90
+         L130 30
+         L155 90
+         L155 30"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__good"
+      d="M180 30
+         L180 90
+         M180 60
+         L205 60
+         M205 30
+         L205 90"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__design"
+      d="M230 30
+         L230 90
+         C230 105, 260 105, 260 85
+         L260 30"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__good"
+      d="M280 30
+         L280 90
+         M280 30
+         L310 90
+         M310 30
+         L310 90"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__design"
+      d="M340 90
+         C340 40, 345 20, 360 20
+         C375 20, 375 50, 370 80
+         C368 95, 355 105, 345 105"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__good"
+      d="M380 90
+         L380 30
+         L410 90
+         L410 30"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__design"
+      d="M430 30
+         L430 90
+         C430 105, 460 105, 460 85
+         L460 30"
+    />
+
+    <path
+      pathLength="100"
+      class="handwritten__text handwritten__good"
+      d="M480 30
+         L480 90"
+    />
+
+  </svg>
+</div>
+
+
 <h5 id="home-subheader">25 October 1857 – 7 December 1899</h5>
 
 <br>
@@ -20,10 +134,34 @@ layout: page
     Known for his European academic painting style, Luna created historical and literary works often infused with political meaning. His allegorical paintings showed strong classical influence and dramatic composition.
   </p>
 
+<div class="timeline-wrapper">
+
+  {% assign sorted_items = site.data.demo-metadata | sort: "year" %}
+
+  {% for item in sorted_items %}
+
+  <div class="timeline-item">
+
+    <div class="timeline-year">
+      {{ item.year }}
+    </div>
+
+    <img src="{% if item.filename contains 'http' %}
+      {{ item.filename }}
+    {% else %}
+      {{ '/objects/' | append: item.filename | relative_url }}
+    {% endif %}"
+    alt="{{ item.title }}">
+
+    <h4 class="timeline-title">
+      {{ item.title }}
+    </h4>
+
+  </div>
+
+  {% endfor %}
+
+</div>
 
 
 
-
-
-
-{% include tilted-carousel.html %}
