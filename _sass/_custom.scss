@@ -125,51 +125,77 @@ main#maincontent {
 }
 
 /*home page ============================*/ 
-.hero-handwritten {
+.timeline-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+
+  padding: 40px 20px;
+  position: relative;
 }
 
-.handwritten {
-  --duration: 1200ms;
-  --delay: 200ms;
-  width: min(600px, 90vw);
-  height: auto;
+/* smaller MCU-style cards */
+.timeline-item {
+  width: 200px;
+  flex-shrink: 0;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 0px;
+
+  overflow: hidden;
+  text-align: center;
+}
+
+/* year on top */
+.timeline-year {
+  font-size: 0.85rem;
+  padding: 6px;
+  letter-spacing: 2px;
+
+  color: rgba(255,255,255,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* FORCE 1:1 IMAGE */
+.timeline-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* title only */
+.timeline-title {
+  font-size: 0.85rem;
+  padding: 8px;
+
+  margin: 0;
   color: white;
 }
 
-.handwritten path:not(.handwritten__dot) {
-  stroke-dasharray: 100, 1000;
-  animation-name: draw-path;
-  animation-fill-mode: forwards;
+.timeline-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-.handwritten__good {
-  animation-duration: var(--duration);
-  animation-delay: var(--delay);
+.timeline-title {
+  margin: 0;
+  padding: 8px 6px;
 }
 
-.handwritten__design {
-  animation-duration: calc(var(--duration) * 1.5);
-  animation-delay: calc(var(--delay) + var(--duration) * 0.95);
+.timeline-year {
+  margin: 0;
 }
 
-.handwritten__dot {
-  animation-name: draw-dot;
-  animation-duration: var(--duration);
-  animation-fill-mode: forwards;
-}
-
-@keyframes draw-path {
-  from { stroke-dashoffset: 100; }
-  to { stroke-dashoffset: 0; }
-}
-
-@keyframes draw-dot {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.timeline-item {
+  overflow: hidden;
+  border-radius: 0;
 }
 
 /* =========================
