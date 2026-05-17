@@ -134,16 +134,13 @@ main#maincontent {
 home page ================================================
    ========================= */
 .home-nav-layer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-
-  height: var(--nav-height);
-
-  background: #0e131a;
-
-  z-index: 0;
+  width: 100%;
+  height: 200px;
+  background: red;
+  z-index: 9999;
 }
 
 
